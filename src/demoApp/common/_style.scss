@@ -1,0 +1,12 @@
+@mixin container() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$shadow: 0px 0px 10px #a0a0a0;
+
+@mixin hoverEffect() {
+    transition-duration: 0.8s;
+    box-shadow: 0px 0px 30px #a0a0a0;
+}

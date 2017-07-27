@@ -1,0 +1,57 @@
+@import '../../../common/style';
+
+@mixin loginContainer() {
+    @include container();
+    height: 90vh;
+    flex-direction: column;
+}
+
+$element-width: 300px;
+
+@mixin loginElement() {
+    padding: 10px;
+    box-sizing: border-box;
+    width: $element-width;
+    box-shadow: $shadow;
+}
+
+@mixin input($border-color) {
+    @include loginElement();
+    border: solid 1px $border-color;
+}
+
+.login-container {
+    @include loginContainer();
+}
+
+.custom-input {
+    input {
+        @include input(#dcdcdc);
+    }
+}
+
+.login-button {
+    @include loginElement();
+    
+    margin-top: 50px;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.4s;
+}
+
+.login-button:hover {
+    @include hoverEffect();
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.error-message {
+    @include loginElement();
+    background-color: #900d0d;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+}

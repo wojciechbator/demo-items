@@ -1,0 +1,10 @@
+@import '../common/style';
+
+.item-container {
+    @include container();
+    flex-flow: row wrap;
+}
+
+h1 {
+    text-align: center;
+}

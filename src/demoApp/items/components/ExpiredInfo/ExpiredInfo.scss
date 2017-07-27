@@ -1,0 +1,23 @@
+@import '../../../common/style'; 
+
+.expired-info-container {
+    height: 100px;
+    width: 600px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0da00d;
+    color: white;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.expired-info-container:hover {
+    @include hoverEffect();
+    cursor: pointer;
+}
