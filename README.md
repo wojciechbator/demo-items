@@ -2,8 +2,8 @@ Author:
   Wojciech Bator
 
 Overview:
-  Simple demo app that takes the data from Sienn api, enables
-  logging in and displays list of products.
+  Simple demo app that takes the data from api, enables logging 
+  in and displays list of products.
 
 Notes from author:
   Since this is very small and basic app I decided to use MobX
